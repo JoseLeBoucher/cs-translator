@@ -3,6 +3,7 @@
 CS Translator est une application de bureau conçue pour les joueurs de Counter-Strike, qui écoute en temps réel le chat du jeu et le traduit instantanément dans la langue de votre choix. Fini les barrières de la langue avec vos coéquipiers !
 
 ![Capture d'écran de CS Translator](assets/cs_translator_app_visual.png)
+![Capture d'écran des options de lancement Steam](assets/option_lancement_steam.png)
 
 ---
 
@@ -38,7 +39,7 @@ L'application fonctionne grâce à un processus simple mais efficace :
     * e.  Il stocke le résultat de la traduction dans le cache pour les futurs messages identiques.
 6.  Le résultat (traduction ou message original) est envoyé à l'interface principale via une **queue thread-safe**.
 7.  L'interface affiche le message formaté dans la zone de chat.
-8. **/!\ Ne pas oublier de spécifier l'option de lancement dans steam /!\**
+8.  **Ne pas oublier de spécifier l'option de lancement dans Steam (-condebug)**
 
 ## 🚀 Installation et Lancement
 
@@ -87,6 +88,7 @@ Ce projet peut encore être amélioré ! Voici quelques idées :
 * **Persistance du cache :** Sauvegarder le cache dans un fichier pour qu'il ne soit pas perdu à chaque redémarrage de l'application.
 * **Support d'autres jeux :** Rendre le système d'extraction de logs configurable pour s'adapter à d'autres jeux (Valorant, etc.).
 * **Interface de gestion des langues :** Permettre à l'utilisateur de choisir la langue cible directement depuis l'interface (j'ai entendu parler de i18n).
+* **Communiquer directement avec les autres joueurs dans leur langue :** Pouvoir sélectionner une langue de destination, écrire dans une langue (le français par exemple) et automatiquement envoyer la réponse via la console avec la fonction `say`. J'ai envoyé un mail à Valve pour savoir si je ne risque pas de me faire ban par le bot VAC avec cette méthode...
 
 ---
 
