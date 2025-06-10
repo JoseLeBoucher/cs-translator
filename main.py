@@ -64,18 +64,18 @@ class ConfigPanel(customtkinter.CTkScrollableFrame):
     def _create_config_file_section(self) -> None:
         """Crée la section pour charger un fichier de configuration."""
         self.btn_select_config = customtkinter.CTkButton(
-            self, text="Load config file", command=self.load_config_file, width=180
+            self, text="Charger un fichier de config", command=self.load_config_file, width=180
         )
         self.btn_select_config.grid(row=0, column=0, pady=(10, 5))
 
         self.label_config_path = customtkinter.CTkLabel(
-            self, text="No config loaded", font=FONT_CONFIG_LABEL, wraplength=180, anchor="w"
+            self, text="Pas de fichier trouvé", font=FONT_CONFIG_LABEL, wraplength=180, anchor="w"
         )
         self.label_config_path.grid(row=1, column=0, pady=(0, 10), padx=5, sticky="ew")
 
     def _create_language_section(self) -> None:
         """Crée la section pour les options de langue."""
-        self.chk_en = customtkinter.CTkCheckBox(self, text="Exclude English")
+        self.chk_en = customtkinter.CTkCheckBox(self, text="Exclure la traduction de l'anglais")
         self.chk_en.grid(row=3, column=0, sticky="w", padx=10, pady=(0, 10))
 
     def _create_tokens_section(self) -> None:
@@ -101,7 +101,7 @@ class ConfigPanel(customtkinter.CTkScrollableFrame):
 
     def _create_banned_words_section(self) -> None:
         """Crée la section pour gérer les mots à ne pas traduire."""
-        customtkinter.CTkLabel(self, text="Words to avoid translation").grid(row=9, column=0, sticky="w", padx=10)
+        customtkinter.CTkLabel(self, text="Mots dont la traduction est à éviter (moins d'appels API)").grid(row=9, column=0, sticky="w", padx=10)
 
         words_container = customtkinter.CTkFrame(self)
         words_container.grid(row=10, column=0, padx=10, sticky="ew")
@@ -131,7 +131,7 @@ class ConfigPanel(customtkinter.CTkScrollableFrame):
     def _create_cs_path_section(self) -> None:
         """Crée la section pour le chemin du jeu."""
         self.btn_select_cs = customtkinter.CTkButton(
-            self, text="Chose CS folder", command=self.select_cs_folder, width=180
+            self, text="Choisir le dossier Counter-Strike", command=self.select_cs_folder, width=180
         )
         self.btn_select_cs.grid(row=12, column=0, padx=5, pady=(15, 5))
 
@@ -141,7 +141,7 @@ class ConfigPanel(customtkinter.CTkScrollableFrame):
     def _create_save_section(self) -> None:
         """Crée le bouton de sauvegarde de la configuration."""
         self.btn_save = customtkinter.CTkButton(
-            self, text="Save configuration", command=self.save_config, width=180
+            self, text="Enregistrer la config", command=self.save_config, width=180
         )
         self.btn_save.grid(row=14, column=0, padx=5, pady=(0, 15))
 
@@ -314,7 +314,7 @@ class App(customtkinter.CTk):
         customtkinter.CTkLabel(top_frame, text="CS Translator", font=FONT_TITLE).grid(row=0, column=0, pady=(10, 5))
 
         self.play_button = customtkinter.CTkButton(
-            top_frame, text="Start listening", command=self.toggle_play,
+            top_frame, text="Débuter l'écoute", command=self.toggle_play,
             fg_color=COLOR_GREEN_NORMAL, hover_color=COLOR_GREEN_HOVER
         )
         self.play_button.grid(row=1, column=0, pady=(0, 10))
@@ -325,7 +325,7 @@ class App(customtkinter.CTk):
         self.chat_frame.grid(row=1, column=0, padx=10, pady=(10, 0), sticky="nsew")
 
         customtkinter.CTkButton(
-            self, text="Erase chat", command=self.clear_chat,
+            self, text="Effacer l'historique", command=self.clear_chat,
             fg_color=COLOR_BUTTON_GENERIC, hover_color=COLOR_BUTTON_GENERIC_HOVER
         ).grid(row=2, column=0, padx=10, pady=10, sticky="ew")
 
@@ -345,7 +345,7 @@ class App(customtkinter.CTk):
         """Démarre le processus d'écoute dans un thread séparé."""
         self.is_playing = True
         self.stop_listening.clear()
-        self.play_button.configure(text="Stop listening", fg_color=COLOR_RED_NORMAL, hover_color=COLOR_RED_HOVER)
+        self.play_button.configure(text="Stopper l'écoute", fg_color=COLOR_RED_NORMAL, hover_color=COLOR_RED_HOVER)
         self.config_panel.set_enabled(False)
 
         config = self.config_panel.get_config_data()
@@ -356,7 +356,7 @@ class App(customtkinter.CTk):
         """Arrête le processus d'écoute."""
         self.is_playing = False
         self.stop_listening.set()
-        self.play_button.configure(text="Start listening", fg_color=COLOR_GREEN_NORMAL, hover_color=COLOR_GREEN_HOVER)
+        self.play_button.configure(text="Débuter l'écoute", fg_color=COLOR_GREEN_NORMAL, hover_color=COLOR_GREEN_HOVER)
         self.config_panel.set_enabled(True)
 
     def _listening_worker(self, config: dict) -> None:
