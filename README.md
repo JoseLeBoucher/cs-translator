@@ -91,5 +91,3 @@ Ce projet peut encore être amélioré ! Voici quelques idées :
 * **Communiquer directement avec les autres joueurs dans leur langue :** Pouvoir sélectionner une langue de destination, écrire dans une langue (le français par exemple) et automatiquement envoyer la réponse via la console avec la fonction `say`. J'ai envoyé un mail à Valve pour savoir si je ne risque pas de me faire ban par le bot VAC avec cette méthode...
 
 ---
-
-Projet développé avec ❤️. N'hésitez pas à contribuer !
