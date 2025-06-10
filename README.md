@@ -86,7 +86,6 @@ Pour utiliser l'application, suivez ces étapes :
 ## 💡 Améliorations ? Oui, si le temps me le permets
 
 Ce projet peut encore être amélioré ! Voici quelques idées :
-* **Persistance du cache :** Sauvegarder le cache dans un fichier pour qu'il ne soit pas perdu à chaque redémarrage de l'application.
 * **Support d'autres jeux :** Rendre le système d'extraction de logs configurable pour s'adapter à d'autres jeux (Valorant, etc.).
 * **Interface de gestion des langues :** Permettre à l'utilisateur de choisir la langue cible directement depuis l'interface (j'ai entendu parler de i18n).
 * **Communiquer directement avec les autres joueurs dans leur langue :** Pouvoir sélectionner une langue de destination, écrire dans une langue (le français par exemple) et automatiquement envoyer la réponse via la console avec la fonction `say`. J'ai envoyé un mail à Valve pour savoir si je ne risque pas de me faire ban par le bot VAC avec cette méthode...
