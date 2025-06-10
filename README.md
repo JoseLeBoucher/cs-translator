@@ -39,6 +39,10 @@ L'application fonctionne grâce à un processus simple mais efficace :
 6.  Le résultat (traduction ou message original) est envoyé à l'interface principale via une **queue thread-safe**.
 7.  L'interface affiche le message formaté dans la zone de chat.
 
+<span style="color:red">
+/!\ Ne pas oublier de spécifier l'option de lancement dans steam /!\
+</span>
+
 ## 🚀 Installation et Lancement
 
 Pour utiliser l'application, suivez ces étapes :
