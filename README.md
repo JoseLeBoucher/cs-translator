@@ -38,10 +38,7 @@ L'application fonctionne grâce à un processus simple mais efficace :
     * e.  Il stocke le résultat de la traduction dans le cache pour les futurs messages identiques.
 6.  Le résultat (traduction ou message original) est envoyé à l'interface principale via une **queue thread-safe**.
 7.  L'interface affiche le message formaté dans la zone de chat.
-
-<span style="color:red">
-/!\ Ne pas oublier de spécifier l'option de lancement dans steam /!\
-</span>
+8. **/!\ Ne pas oublier de spécifier l'option de lancement dans steam /!\**
 
 ## 🚀 Installation et Lancement
 
