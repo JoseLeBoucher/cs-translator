@@ -3,7 +3,6 @@
 CS Translator est une application de bureau conçue pour les joueurs de Counter-Strike, qui écoute en temps réel le chat du jeu et le traduit instantanément dans la langue de votre choix. Fini les barrières de la langue avec vos coéquipiers !
 
 ![Capture d'écran de CS Translator](assets/cs_translator_app_visual.png)
-![Capture d'écran des options de lancement Steam](assets/option_lancement_steam.png)
 
 ---
 
