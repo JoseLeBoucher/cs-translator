@@ -26,7 +26,7 @@ CS Translator est une application de bureau conçue pour les joueurs de Counter-
 
 L'application fonctionne grâce à un processus simple mais efficace :
 
-1.  Un **thread d'arrière-plan** est lancé lorsque vous activez l'écoute (vous noterez la présence d'un While True dans le code, c'est pour le générateur, celui ne consomme pas de ressource inutilement).
+1.  Un **thread d'arrière-plan** est lancé lorsque vous activez l'écoute (vous noterez la présence d'un While True dans le code, c'est pour le générateur, celui-ci ne consomme pas de ressource inutilement).
 2.  Ce thread surveille en permanence le fichier `.../csgo/console.log` pour toute nouvelle ligne ajoutée.
 3.  Il filtre les lignes pour ne garder que les messages du chat des joueurs (grâce aux tags comme `[T]`, `[CT]`, `[AT]`, `[ALL]`, `[GÉNÉRAL]`).
 4.  Le nom du joueur et le message sont extraits.
