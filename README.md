@@ -1,9 +1,8 @@
 # CS Translator 🌐
 
-T'en as marre de ne rien comprendre aux message de tous ces joueurs d'Europe de l'Est ?<br>
+T'en as marre de ne rien comprendre aux messages de tous ces joueurs d'Europe de l'Est ?<br>
 Marre de savoir qu'ils t'insultent mais de ne pas pouvoir savoir de quoi exactement ?<br><br>
-CS Translator est une application de bureau conçue pour les joueurs de Counter-Strike, qui écoute en temps réel le chat du jeu et le traduit instantanément dans la langue de votre choix. Fini les barrières de la langue avec vos coéquipiers !
-
+CS Translator est une application de bureau conçue pour les joueurs de Counter-Strike, qui écoute en temps réel le chat du jeu et le traduit instantanément en français.
 ![Capture d'écran de CS Translator](assets/cs_translator_app_visual.png)
 
 ---
